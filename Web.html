@@ -17,11 +17,14 @@
 		  background-position: center;
 		  background-repeat: no-repeat;
 		  color: white; 
+		  font-weight: 1000;
 	}
 
 	/* Increase the font size of the <h1> element */
 	.header h1 {
 		font-size: 40px;
+		font-family:copperplate, fantasy;
+
 	}
 	/*Navi Bar*/
 	ul {
@@ -51,7 +54,7 @@
 	div.polaroid {
 		  width: 12%;
 		  background-color: white;
-		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 		  margin-bottom: 100px;
 	}
 
@@ -60,33 +63,45 @@
 		  padding: 5px 20px;
 	}
 	
-<!-- TABLE(aboutme/family) CSS -->
+<!-- TABLE(aboutme) CSS -->
 
+	table.taboutme td{
+		border: 0px solid black;
+		border-collapse: collapse;
+		text-align: left;
+		padding: 9px;
 
-			td{
+	}
+
+	table.taboutme td, th {
+		border: 0px solid black;
+		text-align: left;
+		padding: 8px;
+	}	
+
+	
+<!-- TABLE(family) CSS -->
+	table.tfamily td{
 		border: 0px solid black;
 		 border-collapse: collapse;
 		text-align: left;
 		padding: 9px;
-		font-family: Arial;
+		font-family: Arial, sans-serif;
 	}
 
-	td, th {
+	table.tfamily td, th {
 		border: 1px solid black;
 		text-align: left;
 		padding: 8px;
 	}	
-	tr:nth-child(even) {
+	table.tfamily tr:nth-child(even) {
 		background-color: #dddddd;
 	}
+	
 
 
-.taboutme{
-		td:nth-child(even){
 
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	}
-}
+
 <!-- SKILLS CSS -->
 * {box-sizing: border-box}
 
@@ -127,7 +142,7 @@
 
 </style>
 </head>
-<body style="background-color: #B8FCEE">
+<body style="background-color: #DFF1FE">
 
 <!-- HEADER -->
 	<div class="header">
@@ -141,15 +156,16 @@
 	  <li><a href="#secHome">Home</a></li>
 	  <li><a href="#secAbout">About Me</a></li>
 	  <li><a href="#secEdu">Education</a></li>
-	  <li><a href="#secSkills">Skills</a></li>
 	  <li><a href="#secFam">Family</a></li>
+	  <li><a href="#secSkills">Skills</a></li>
+
 	</ul>
 
 
 <!--HOME CONTENT-->
 	<div id="secHome">
 
-		<h2 style="margin-left:120px; color: black; font-size: 40px">Home<h2>
+		<h2 style="margin-left:120px; color: black; font-size: 40px; font-family:copperplate, fantasy">HOME<h2>
 			<div class="polaroid" style=" margin-left:200px; margin-top: 50px">
 			<img src="2.jpg"  style="width:100%">
 			 <div class="container" style="background-color: white">
@@ -188,172 +204,81 @@
 	</div>
 
 <!-- ABOUT ME CONTENT -->
-	<div id="secAbout">
-		<h2 style="margin-left:120px; color: black; font-size: 40px">About Me<h2>
+	<div id="secAbout" style="padding-bottom:50px">
+		<h2 style="margin-left:120px; color: black; font-size: 40px;font-family:copperplate, fantasy">ABOUT ME</h2>
 		<img style="width:15%; margin-left:800px;margin-bottom:-300px;border-radius: 50%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="me.jpg">
-		<table class="taboutme" style="border-collapse: collapse;margin-left:520px;margin-top:320px;font-size:25px;width:50%">
+		<table class="taboutme" style="border-collapse: collapse;margin-left:730px;margin-top:320px;font-size:25px;width:30%;font-family: corbel,css;">
               <tbody>
                 <tr>
-                  <td style="background-color:black;color:#B8FCEE">Name:</td>
-                  <td>Mirza Hazim Bin Rosli</td>
+                  <td>Name</td>
+                  <td>: Mirza Hazim Bin Rosli</td>
                 </tr>
                 <tr>
-                  <td style="background-color:#212423;color:#B8FCEE">Date of birth:</td>
-                  <td>18 February 2000</td>
+                  <td>Date of birth</td>
+                  <td>: 18 February 2000</td>
                 </tr>
                 <tr>
-                  <td style="background-color:black;color:#B8FCEE">Address:</td>
-                  <td>Maran, Pahang</td>
+                  <td>Addresss</td>
+                  <td>: Maran, Pahang</td>
                 </tr>
                 <tr>
-                  <td style="background-color:#212423;color:#B8FCEE">Zip Code:</td>
-                  <td>28100</td>
+                  <td>Zip Code</td>
+                  <td>: 28100</td>
                 </tr>
                 <tr>
-                  <td style="background-color:black;color:#B8FCEE">Status:</td>
-                  <td>Single</td>
+                  <td>Status</td>
+                  <td>: Single</td>
                 </tr>
                 <tr>
-                  <td style="background-color:#212423;color:#B8FCEE">Email:</td>
-                  <td>mirzahazimm@gmail.com</td>
+                  <td>Email</td>
+                  <td>: mirzahazimm@gmail.com</td>
                 </tr>
                 <tr>
-                  <td style="background-color:black;color:#B8FCEE">Phone:</td>
-                  <td>011-56366654</td>
+                  <td>Phone</td>
+                  <td>: 011-56366654</td>
                 </tr>
               </tbody>
             </table>
 	</div>
 
 <!-- EDUCATION CONTENT -->
-	<div id="secEdu">
-		<h2 style="margin-left:120px;margin-top: 50px; color: black; font-size: 40px">Education<h2>
+	<div id="secEdu" style="font-family: monaco,monospace">
+		<h2 style="margin-left:120px;margin-top: 50px; color: black; font-size: 40px;font-family:copperplate, fantasy">EDUCATION<h2>
         <div style="border-bottom:0.5px solid grey;width:80%;font-size:20px;margin-left:140px">
-			<p style="color:#00F423;">2004 - 2006</p>
+			<p style="color:#4C7D82;">2004 - 2006</p>
 			<p style="color:black;">PASTI Al-Ridzuan</p>
-			<p style="color:black;">Age 4 - 6</p>
 			<p style="color:grey;"><i>I can't remember a single memory during these days except representing my district for a football tournament...</i></p>
         </div>
 		<div style="border-bottom:0.5px solid grey;width:80%;font-size:20px;margin-left:140px">
-			<p style="color:#00F423;"><b>2007 - 2011</b></p>
+			<p style="color:#4C7D82;"><b>2007 - 2011</b></p>
 			<p style="color:black;">SK Bukit Bota</p>
-			<p style="color:black;">Age 7 - 11</p>
 			<p style="color:grey;"><i>Nothing much happened here except enjoying my childhood time.</i></p>
         </div>
 		<div style="border-bottom:0.5px solid grey;width:80%;font-size:20px;margin-left:140px">
-			<p style="color:#00F423;">2012</p>
+			<p style="color:#4C7D82;">2012</p>
 			<p style="color:black;">SK Chenor</p>
-			<p style="color:black;">Age 7 - 11</p>
 			<p style="color:black;">UPSR : 5As</p>
 			<p style="color:grey;"><i>Changed to my father's school in the last year of my primary school.</i></p>
         </div>		
-		<div style="border-bottom:0.5px solid grey;width:80%;font-size:20px;margin-left:140px">
-			<p style="color:#00F423;">2013-2017</p>
+		<div style="border-bottom:0.2px solid grey;width:80%;font-size:20px;margin-left:140px">
+			<p style="color:#4C7D82;">2013-2017</p>
 			<p style="color:black;">SMAP Bentong(SUPERB)</b></p>
-			<p style="color:black;">Age 13 - 17</p>
 			<p style="color:black;">PT3 : 11As</p>
 			<p style="color:black;">SPM : 8A 2B 1C</p>
 			<p style="color:grey;"><i>No matter what's going on to your life right now, school memories always make you happy. Lots of fun with Predos. </i></p>
         </div>
 		<div style="border-bottom:0.5px solid grey;width:80%;font-size:20px;margin-left:140px">
-			<p style="color:#00F423;">2018- Now</p>
+			<p style="color:#4C7D82;">2018- Now</p>
 			<p style="color:black;">UiTM Raub</p>
-			<p style="color:black;">Age 18 - Now</p>
 			<p style="color:black;">CGPA : 3.93</p>
 			<p style="color:grey;"><i>Enjoying my life here now but not with the COVID around.</i></p>
         </div>			
 	</div>
 	
-	
-	
-<!-- SKILLS CONTENT -->
-	<div id="secSkills" >
-		<h2 style="margin-top: 50px; color: black; font-size: 40px; margin-left: 120px">Skills<h2>
-		
-			<div style="background-color:#2D2E2D; border-radius: 10px; width: 30%; padding-bottom: 10px; padding-top: 1px;margin-left: 130px">
-				<tr>
-					<p style="color: white; text-align: center; font-size: 25px; font-family: " Tahoma"><b>Professional</b></p>
-							<p style="color:white; margin-left: 20px; font-size: 15px;">HTML</p>
-					<div class="container">
-					  <div class="skills html">75%</div>
-					</div>
-					
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">CSS</p>
-					<div class="container">
-					  <div class="skills css">65%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">JavaScript</p>
-					<div class="container">
-					  <div class="skills js">45%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">PHP</p>
-					<div class="container">
-					  <div class="skills php">60%</div>
-					</div>
-			</div>
-			
-			
-			<div style="background-color:#2D2E2D; border-radius: 10px; width: 30%; padding-bottom: 10px; padding-top: 1px;margin-left: 715px; margin-top: -365px">
-				<tr>
-					<p style="color: white; text-align: center; font-size: 25px; font-family: " Tahoma"><b>Personal</b></p>
-							<p style="color:white; margin-left: 20px; font-size: 15px;">Commitment</p>
-					<div class="container">
-					  <div class="skills cmt">95%</div>
-					</div>
-					
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">Punctual</p>
-					<div class="container">
-					  <div class="skills pnt">85%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">Leadership</p>
-					<div class="container">
-					  <div class="skills lds">80%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">Communication</p>
-					<div class="container">
-					  <div class="skills comm">60%</div>
-					</div>
-			</div>
-			
-			
-			<div style="background-color:#2D2E2D; border-radius: 10px; width: 30%; padding-bottom: 10px; padding-top: 1px;margin-left: 1300px; margin-top: -365px">
-				<tr>
-					<p style="color: white; text-align: center; font-size: 25px; font-family: " Tahoma"><b>Language</b></p>
-							<p style="color:white; margin-left: 20px; font-size: 15px;">Bahasa(Native)</p>
-					<div class="container">
-					  <div class="skills bm">100%</div>
-					</div>
-					
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">English</p>
-					<div class="container">
-					  <div class="skills eng">70%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">French</p>
-					<div class="container">
-					  <div class="skills fr">25%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">Arabic</p>
-					<div class="container">
-					  <div class="skills arb">40%</div>
-					</div>
-			</div>
-
-		
-	</div>
-	
-	
+<!-- FAMILY CONTENT -->
 	<div id="secFam">
-		<h2 style="margin-top: 50px; color: black; font-size: 40px; margin-left: 120px">Family<h2>	
-			<table class="tfamily" style="margin-left: 140px; width:70%; text-align: center; font-family:arial; border-collapse: collapse;">
+		<h2 style="margin-top: 50px; color: black; font-size: 40px; margin-left: 120px;font-family:copperplate, fantasy">FAMILY<h2>	
+			<table class="tfamily" style="margin-left: 140px; width:70%; text-align: center; font-family:Helvetica, sans-serif; border-collapse: collapse;">
 			  <tr>
 				<th style="background-color: #333433;color:#B8FCEE; text-align:center">Name</th>
 				<th style="background-color: #333433;color:#B8FCEE; text-align:center">Age</th>
@@ -387,7 +312,7 @@
 				<td>Syaza Hanis binti Rosli</td>
 				<td style="text-align: center">23</td>
 				<td style="text-align: center">Financial Advisor</td>
-				<td style="text-align: center"></td>
+				<td style="text-align: center">Sister</td>
 			  </tr>
 			  <tr>
 				<td>Mirza Hazim bin Rosli</td>
@@ -396,6 +321,94 @@
 				<td style="text-align: center">Brother</td>
 			  </tr>
 			</table>	
+	</div>	
+	
+	
+<!-- SKILLS CONTENT -->
+	<div id="secSkills" >
+		<h2 style="margin-top: 50px; color: black; font-size: 40px; margin-left: 120px;font-family:copperplate, fantasy">SKILLS<h2>
+		
+			<div style="background-color:#2D2E2D; border-radius: 10px; width: 30%; padding-bottom: 10px; padding-top: 1px;margin-left: 130px">
+				<tr>
+					<p style="color: white; text-align: center; font-size: 25px; font-family: " Tahoma"><b>Professional</b></p>
+							<p style="color:white; margin-left: 20px; font-size: 15px;">HTML</p>
+					<div class="container">
+					  <div class="skills html">75%</div>
+					</div>
+					
+
+					<p style="color:white;margin-left: 20px;font-size: 15px;">CSS</p>
+					<div class="container">
+					  <div class="skills css">65%</div>
+					</div>
+
+					<p style="color:white;margin-left: 20px;font-size: 15px;">JavaScript</p>
+					<div class="container">
+					  <div class="skills js">45%</div>
+					</div>
+
+					<p style="color:white;margin-left: 20px;font-size: 15px;">PHP</p>
+					<div class="container">
+					  <div class="skills php">60%</div>
+					</div>
+			</div>
+			
+			
+			<div style="background-color:#2D2E2D; border-radius: 10px; width: 30%; padding-bottom: 10px; padding-top: 1px;margin-left: 715px; margin-top: -370px">
+				<tr>
+					<p style="color: white; text-align: center; font-size: 25px; font-family: " Tahoma"><b>Personal</b></p>
+							<p style="color:white; margin-left: 20px; font-size: 15px;">Commitment</p>
+					<div class="container">
+					  <div class="skills cmt">95%</div>
+					</div>
+					
+
+					<p style="color:white;margin-left: 20px;font-size: 15px;">Punctual</p>
+					<div class="container">
+					  <div class="skills pnt">85%</div>
+					</div>
+
+					<p style="color:white;margin-left: 20px;font-size: 15px;">Leadership</p>
+					<div class="container">
+					  <div class="skills lds">80%</div>
+					</div>
+
+					<p style="color:white;margin-left: 20px;font-size: 15px;">Communication</p>
+					<div class="container">
+					  <div class="skills comm">60%</div>
+					</div>
+			</div>
+			
+			
+			<div style="background-color:#2D2E2D; border-radius: 10px; width: 30%; padding-bottom: 10px; padding-top: 1px;margin-left: 1300px; margin-top: -370px">
+				<tr>
+					<p style="color: white; text-align: center; font-size: 25px; font-family: " Tahoma"><b>Language</b></p>
+							<p style="color:white; margin-left: 20px; font-size: 15px;">Bahasa(Native)</p>
+					<div class="container">
+					  <div class="skills bm">100%</div>
+					</div>
+					
+
+					<p style="color:white;margin-left: 20px;font-size: 15px;">English</p>
+					<div class="container">
+					  <div class="skills eng">70%</div>
+					</div>
+
+					<p style="color:white;margin-left: 20px;font-size: 15px;">French</p>
+					<div class="container">
+					  <div class="skills fr">25%</div>
+					</div>
+
+					<p style="color:white;margin-left: 20px;font-size: 15px;">Arabic</p>
+					<div class="container">
+					  <div class="skills arb">40%</div>
+					</div>
+			</div>
+
+		
 	</div>
+	
+	
+
 </body>
 </html>
