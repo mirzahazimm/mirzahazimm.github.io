@@ -1,0 +1,7 @@
+COLOR PICKER - https://htmlcolorcodes.com/color-picker/
+
+NAVIGATION BAR- https://www.w3schools.com/css/css_navbar_vertical.asp
+
+PHOTO SLIDES SHOW - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_website_slideshow
+				-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_website_bandtext
+IMAGE STYLE - https://www.w3schools.com/css/css3_images.asp
