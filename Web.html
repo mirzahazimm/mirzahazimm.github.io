@@ -3,7 +3,7 @@
 <head>
 <style>
 	body{
-		font-family: Tahoma, sans-serif;
+		font-family: Tahoma;
 	}
 	/*Header Syle*/
 	.header {
@@ -41,7 +41,7 @@
 
 	li a {
 		  display: block;
-		  color: #B8FCEE;
+		  color: white;
 		  padding: 15px 16px;
 		  text-decoration: none;
 	}
@@ -81,68 +81,316 @@
 
 	
 <!-- TABLE(family) CSS -->
+
+	table.tfamily {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border-collapse: collapse;
+        width: 800px;
+        height: 200px;
+        border: 1px solid #bdc3c7;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    table.tfamily tr {
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    
+    table.tfamily th{
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
 	table.tfamily td{
-		border: 0px solid black;
-		 border-collapse: collapse;
-		text-align: left;
-		padding: 9px;
-		font-family: Arial, sans-serif;
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+	table.tfamily h1 {
+        font-weight: 600;
+        text-align: center;
+        background-color: #16a085;
+        color: #fff;
+        padding: 10px 0px;
+    }
+    
+    table.tfamily tr:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    @media only screen and (max-width: 768px) {
+        table {
+            width: 90%;
+        }
+    }
+
+
+
+/* SKILLS CSS */
+
+		.skills{
+			color: white;
+			list-style: none;
+			background: #333;
+			border-radius: 10px;
+			width: 25%;
+			padding: 10px;
+			font-family: tahoma;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+		.skills li{
+			margin-left: 10px;
+			font-size: 15px;
+		}
+		.skills h1{
+
+			font-size: 20px;
+			text-align: center;
+		}
+        .skills:hover{
+         background: black;
+        }
+		.bar{
+			width: 90%;
+			background: #353b48;
+			display: block;
+			height: 2px;
+			border: 1px solid rgba(0,0,0,0.3);
+			overflow: hidden;
+			box-shadow: 0 0 10px #2187e7b3;
+
+		}
+		.bar span{
+			height: 2px;
+			float: left;
+			background: #2187e7;
+		}
+
+
+		.html{
+			width: 75%;
+			animation: html 2s;
+		}
+		
+		.css{
+			width: 65%;
+			animation: css 2s;
+		}
+		.javas{
+			width: 45%;
+			animation: javas 2s;
+		}
+		.php{
+			width: 60%;
+			animation: php 2s;
+		}
+		@keyframes html{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 75%;
+			}
+		}
+		@keyframes css{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 65%;
+			}
+		}
+		@keyframes javas{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 45%;
+			}
+		}
+		@keyframes php{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 60%;
+			}
+		}
+
+		.comt{
+			width: 95%;
+			animation: comt 2s;
+		}
+		.punc{
+			width: 85%;
+			animation: punc 2s;
+		}
+		.lead{
+			width: 80%;
+			animation: lead 2s;
+		}
+		.comm{
+			width: 60%;
+			animation: comm 2s;
+		}
+		@keyframes comt{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 95%;
+			}
+		}
+		@keyframes punc{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 85%;
+			}
+		}
+		@keyframes lead{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 80%;
+			}
+		}
+		@keyframes comm{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 60%;
+			}
+		}
+		
+		.bm{
+			width: 100%;
+			animation: bm 2s;
+		}
+		.eng{
+			width: 70%;
+			animation: eng 2s;
+		}
+		.fr{
+			width: 25%;
+			animation: fr 2s;
+		}
+		.arb{
+			width: 40%;
+			animation: arb 2s;
+		}
+		@keyframes bm{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 100%;
+			}
+		}
+		@keyframes eng{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 70%;
+			}
+		}
+		@keyframes fr{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 25%;
+			}
+		}
+		@keyframes arb{
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 40%;
+			}
+		}
+		.btn {
+		background: #39b7dd;
+		text-align: center;
+		margin-left: 500px;
+		width: 200px;
+		padding: 15px;
+		border-radius: 5px;
+		color: #fff;
+		cursor: pointer;
+		text-transform: uppercase;
 	}
 
-	table.tfamily td, th {
-		border: 1px solid black;
-		text-align: left;
-		padding: 8px;
-	}	
-	table.tfamily tr:nth-child(even) {
-		background-color: #dddddd;
-	}
 	
+<!-- FOOTER CSS -->
+	#footer{
+		font-family: 'Roboto';
+		background-color: black;
+		padding-top: 50px;
 
+	}
 
+	#cont {
+	  color:#999;
+	  text-transform: uppercase;
+	  font-size:36px;
+	  font-weight:bold; 
+	  text-align: center;
+	  width:100%;
+	  display:block;
+	  top: 500%;
+	}
 
+	#flip {
+	  height:50px;
+	  overflow:hidden;
+	}
 
-<!-- SKILLS CSS -->
-* {box-sizing: border-box}
+	#flip > div > div {
+	  color:#fff;
+	  padding:4px 12px;
+	  height:45px;
+	  margin-bottom:45px;
+	  display:inline-block;
+	}
 
-.container {
-  width: 70%;
-  background-color: grey;
-  margin-left: 10px;
-  border-radius: 20px;
-  padding-bottom: 100px;
-}
+	#flip div:first-child {
+	  animation: show 5s linear infinite;
+	}
 
-.skills {
-  text-align: center;
-  color: black;
-  border-radius: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  font-weight: bolder;
-}
-/*Studies*/
-.html {width: 75%; background-color: white; font-size: 12px;}
-.css {width: 65%; background-color: white;font-size: 12px;}
-.js {width: 45%; background-color: white;font-size: 12px;}
-.php {width: 60%; background-color: white;font-size: 12px;}
+	#flip div div {
+	  background:#42c58a;
+	}
+	#flip div:first-child div {
+	  background:#4ec7f3;
+	}
+	#flip div:last-child div {
+	  background:#DC143C;
+	}
 
-.cmt {width: 95%; background-color: white; font-size: 12px;}
-.pnt {width: 85%; background-color: white;font-size: 12px;}
-.lds {width: 80%; background-color: white;font-size: 12px;}
-.comm {width: 60%; background-color: white;font-size: 12px;}
-
-.bm {width: 100%; background-color: white; font-size: 12px;}
-.eng {width: 70%; background-color: white;font-size: 12px;}
-.fr {width: 25%; background-color: white;font-size: 12px;}
-.arb {width: 40%; background-color: white;font-size: 12px;}
-
-<!-- FAMILY CSS -->
+	@keyframes show {
+	  0% {margin-top:-270px;}
+	  5% {margin-top:-180px;}
+	  33% {margin-top:-180px;}
+	  38% {margin-top:-90px;}
+	  66% {margin-top:-90px;}
+	  71% {margin-top:0px;}
+	  99.99% {margin-top:0px;}
+	  100% {margin-top:-270px;}
+	}
 
 
 </style>
 </head>
-<body style="background-color: #DFF1FE">
+<body style="background-color: #343434">
 
 <!-- HEADER -->
 	<div class="header">
@@ -204,10 +452,10 @@
 	</div>
 
 <!-- ABOUT ME CONTENT -->
-	<div id="secAbout" style="padding-bottom:50px">
+	<div id="secAbout" style="padding-bottom:50px" style="position: absolute">
 		<h2 style="margin-left:120px; color: black; font-size: 40px;font-family:copperplate, fantasy">ABOUT ME</h2>
 		<img style="width:15%; margin-left:800px;margin-bottom:-300px;border-radius: 50%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="me.jpg">
-		<table class="taboutme" style="border-collapse: collapse;margin-left:730px;margin-top:320px;font-size:25px;width:30%;font-family: corbel,css;">
+		<table class="taboutme" style="border-collapse: collapse;margin-left:730px;margin-top:320px;font-size:25px;width:30%;font-family: corbel,css;color:grey">
               <tbody>
                 <tr>
                   <td>Name</td>
@@ -245,45 +493,45 @@
 	<div id="secEdu" style="font-family: monaco,monospace">
 		<h2 style="margin-left:120px;margin-top: 50px; color: black; font-size: 40px;font-family:copperplate, fantasy">EDUCATION<h2>
         <div style="border-bottom:0.5px solid grey;width:80%;font-size:20px;margin-left:140px">
-			<p style="color:#4C7D82;">2004 - 2006</p>
+			<p style="color:white;">2004 - 2006</p>
 			<p style="color:black;">PASTI Al-Ridzuan</p>
 			<p style="color:grey;"><i>I can't remember a single memory during these days except representing my district for a football tournament...</i></p>
         </div>
 		<div style="border-bottom:0.5px solid grey;width:80%;font-size:20px;margin-left:140px">
-			<p style="color:#4C7D82;"><b>2007 - 2011</b></p>
+			<p style="color:white;"><b>2007 - 2011</b></p>
 			<p style="color:black;">SK Bukit Bota</p>
 			<p style="color:grey;"><i>Nothing much happened here except enjoying my childhood time.</i></p>
         </div>
 		<div style="border-bottom:0.5px solid grey;width:80%;font-size:20px;margin-left:140px">
-			<p style="color:#4C7D82;">2012</p>
+			<p style="color:white;">2012</p>
 			<p style="color:black;">SK Chenor</p>
-			<p style="color:black;">UPSR : -</p>
+			<p style="color:black;">UPSR : 5As</p>
 			<p style="color:grey;"><i>Changed to my father's school in the last year of my primary school.</i></p>
         </div>		
 		<div style="border-bottom:0.2px solid grey;width:80%;font-size:20px;margin-left:140px">
-			<p style="color:#4C7D82;">2013-2017</p>
+			<p style="color:white;">2013-2017</p>
 			<p style="color:black;">SMAP Bentong(SUPERB)</b></p>
-			<p style="color:black;">PT3 : -</p>
-			<p style="color:black;">SPM : -</p>
+			<p style="color:black;">PT3 : 11As</p>
+			<p style="color:black;">SPM : 8A 2B 1C</p>
 			<p style="color:grey;"><i>No matter what's going on to your life right now, school memories always make you happy. Lots of fun with Predos. </i></p>
         </div>
 		<div style="border-bottom:0.5px solid grey;width:80%;font-size:20px;margin-left:140px">
-			<p style="color:#4C7D82;">2018- Now</p>
+			<p style="color:white;">2018- Now</p>
 			<p style="color:black;">UiTM Raub</p>
-			<p style="color:black;">CGPA : -</p>
+			<p style="color:black;">CGPA : 3.93</p>
 			<p style="color:grey;"><i>Enjoying my life here now but not with the COVID around.</i></p>
         </div>			
 	</div>
 	
 <!-- FAMILY CONTENT -->
 	<div id="secFam">
-		<h2 style="margin-top: 50px; color: black; font-size: 40px; margin-left: 120px;font-family:copperplate, fantasy">FAMILY<h2>	
-			<table class="tfamily" style="margin-left: 140px; width:70%; text-align: center; font-family:Helvetica, sans-serif; border-collapse: collapse;">
+		<h2 style="margin-top: 50px; color: black; font-size: 40px; margin-left: 120px;font-family:copperplate, fantasy">FAMILY</h2>	
+			<table class="tfamily" style="margin-left: 280px; width:70%; text-align: center; font-family: Tahoma; font-size:20px">
 			  <tr>
-				<th style="background-color: #333433;color:#B8FCEE; text-align:center">Name</th>
-				<th style="background-color: #333433;color:#B8FCEE; text-align:center">Age</th>
-				<th style="background-color: #333433;color:#B8FCEE; text-align:center">Profession</th>
-				<th style="background-color: #333433;color:#B8FCEE; text-align:center">Relationship</th>
+				<th style="background-color: black;color:white; text-align:center">Name</th>
+				<th style="background-color: black;color:white; text-align:center">Age</th>
+				<th style="background-color: black;color:white; text-align:center">Profession</th>
+				<th style="background-color: black;color:white; text-align:center">Relationship</th>
 			  </tr>
 			  <tr>
 				<td>Rosli bin Ahmad</td>
@@ -325,87 +573,80 @@
 	
 	
 <!-- SKILLS CONTENT -->
-	<div id="secSkills" >
+	<div id="secSkills" style="padding-bottom: 40px;">
 		<h2 style="margin-top: 50px; color: black; font-size: 40px; margin-left: 120px;font-family:copperplate, fantasy">SKILLS<h2>
 		
-			<div style="background-color:#2D2E2D; border-radius: 10px; width: 30%; padding-bottom: 10px; padding-top: 1px;margin-left: 130px">
-				<tr>
-					<p style="color: white; text-align: center; font-size: 25px; font-family: " Tahoma"><b>Professional</b></p>
-							<p style="color:white; margin-left: 20px; font-size: 15px;">HTML</p>
-					<div class="container">
-					  <div class="skills html">75%</div>
-					</div>
-					
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">CSS</p>
-					<div class="container">
-					  <div class="skills css">65%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">JavaScript</p>
-					<div class="container">
-					  <div class="skills js">45%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">PHP</p>
-					<div class="container">
-					  <div class="skills php">60%</div>
-					</div>
-			</div>
+		<div class="skills" style="margin-left:130px">
+			<h1>Software Skills</h1>
+			<li>
+				<h4>HTML</h4><span class="bar"><span class="html"></span></span>
+			</li>
+			<li>
+				<h4>CSS</h4><span class="bar"><span class="css"></span></span>
+			</li>
+			<li>
+				<h4>Javascript</h4><span class="bar"><span class="javas"></span></span>
+			</li>
+			<li>
+				<h4>PHP</h4><span class="bar"><span class="php"></span></span>
+			</li>			
+		</div>
 			
 			
-			<div style="background-color:#2D2E2D; border-radius: 10px; width: 30%; padding-bottom: 10px; padding-top: 1px;margin-left: 715px; margin-top: -370px">
-				<tr>
-					<p style="color: white; text-align: center; font-size: 25px; font-family: " Tahoma"><b>Personal</b></p>
-							<p style="color:white; margin-left: 20px; font-size: 15px;">Commitment</p>
-					<div class="container">
-					  <div class="skills cmt">95%</div>
-					</div>
-					
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">Punctual</p>
-					<div class="container">
-					  <div class="skills pnt">85%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">Leadership</p>
-					<div class="container">
-					  <div class="skills lds">80%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">Communication</p>
-					<div class="container">
-					  <div class="skills comm">60%</div>
-					</div>
-			</div>
-			
-			
-			<div style="background-color:#2D2E2D; border-radius: 10px; width: 30%; padding-bottom: 10px; padding-top: 1px;margin-left: 1300px; margin-top: -370px">
-				<tr>
-					<p style="color: white; text-align: center; font-size: 25px; font-family: " Tahoma"><b>Language</b></p>
-							<p style="color:white; margin-left: 20px; font-size: 15px;">Bahasa(Native)</p>
-					<div class="container">
-					  <div class="skills bm">100%</div>
-					</div>
-					
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">English</p>
-					<div class="container">
-					  <div class="skills eng">70%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">French</p>
-					<div class="container">
-					  <div class="skills fr">25%</div>
-					</div>
-
-					<p style="color:white;margin-left: 20px;font-size: 15px;">Arabic</p>
-					<div class="container">
-					  <div class="skills arb">40%</div>
-					</div>
-			</div>
-
+		<div class="skills" style="margin-left:715px;margin-top: -305px">
+			<h1>Personals</h1>
+			<li>
+				<h4>Commitment</h4><span class="bar"><span class="comt"></span></span>
+			</li>
+			<li>
+				<h4>Punctual</h4><span class="bar"><span class="punc"></span></span>
+			</li>
+			<li>
+				<h4>Leadership</h4><span class="bar"><span class="lead"></span></span>
+			</li>
+			<li>
+				<h4>Communication</h4><span class="bar"><span class="comm"></span></span>
+			</li>			
+		</div>
 		
+				
+		<div class="skills" style="margin-left:370px;margin-left: 1300px; margin-top: -305px">
+			<h1>Languages</h1>
+			<li>
+				<h4>Bahasa(Native)</h4><span class="bar"><span class="bm"></span></span>
+			</li>
+			<li>
+				<h4>English</h4><span class="bar"><span class="eng"></span></span>
+			</li>
+			<li>
+				<h4>French</h4><span class="bar"><span class="fr"></span></span>
+			</li>
+			<li>
+				<h4>Arabic</h4><span class="bar"><span class="arb"></span></span>
+			</li>			
+		</div>
+		
+
+
+	</div>
+			<button class="btn" style="margin-left: 840px;margin-bottom: 10px;"><a href="Form.html" style="color: white; text-decoration:none">Feedback Form</button>
+
+
+
+<!-- FOOTER -->
+
+	
+	<div id="footer" style="background-color:black; padding: 50px; margin-right: -10px; margin-bottom: -10px;" >
+		<div id="cont">
+		  Make 
+		  <div id="flip">
+			<div><div>wOrK</div></div>
+			<div><div>lifeStyle</div></div>
+			<div><div>Everything</div></div>
+		  </div>
+		  AweSoMe!
+		</div>
+		<p style="margin-top:2%; text-align:center">Copyright © 2020 Mirza Hazim Rosli </b></p>
 	</div>
 	
 	

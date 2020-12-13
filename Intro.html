@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				font-family: impact,fantasy;
+				font-weight: 300px;
+			}
+			.bg{
+				width: 100%;
+				height: 100vh;
+				background-image: url('background.png');
+				bacground-size: cover;
+				background-position: center;
+				position: relative;
+				overflow: hidden;
+			}
+			.logo{
+				width: 100px;
+				cursor: pointer;
+			}
+			.align{
+				width: 85%;
+				height: 15%;
+				margin: auto;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			button{
+				color: #fbfcfd;
+				padding: 10px 25px;
+				background: transparent;
+				border: 1px solid #fff;
+				border-radius: 20px;
+				outline: none;
+				cursor: pointer;
+			}
+			.content{
+				color: #fbfcfd;
+				position: absolute;
+				top: 50%;
+				left: 8%;
+				transform: translateY(-50%);
+				z-index: 2;
+			}
+			h1{
+				font-size: 80px;
+				margin: 10px 0 30px;
+				line-height: 80px;
+			}
+			h3{
+				font-size: 40px;
+				margin: -50px 0 30px;
+				line-height: 80px;
+			}
+			.bubbles img{
+				width: 50px;
+				animation: bubble 7s linear infinite;
+			}
+			.bubbles{
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				position: absolute;
+				bottom: -70px;
+			}
+			@keyframes bubble{
+				0%{
+					transform: translateY(0);
+					opacity: 0;
+				}
+				50%{
+
+					opacity: 1;
+				}
+				7%{
+
+					opacity: 1;
+				}
+				100%{
+					transform: translateY(-80vh);
+					opacity: 0;
+				}				
+
+			}
+			.bubbles img:nth-child(1){
+				animation-delay: 2s;
+				width: 55px;
+			}
+			.bubbles img:nth-child(2){
+				animation-delay: 1s;
+				width: 60px;
+			}
+			.bubbles img:nth-child(3){
+				animation-delay: 3s;
+				width: 30px;
+			}
+			.bubbles img:nth-child(4){
+				animation-delay: 4.5s;
+				width: 57px;
+			}
+			.bubbles img:nth-child(5){
+				animation-delay: 3s;
+				width: 65px;
+			}
+			.bubbles img:nth-child(6){
+				animation-delay: 6s;
+				width: 45px;
+			}
+			.bubbles img:nth-child(7){
+				animation-delay: 7s;
+				width: 50px;
+			}
+			
+			
+
+
+		</style>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="align">
+				<img src="logo.png" class="logo">
+			</div>
+			<div class="content">
+				<small>Welcome to </small>
+				<h1>Mirza Hazim<br>CS1105A</h1>
+				<h3>2018267168</h3>
+				<button type="button"><a href="Web.html" style="color: white;text-decoration: none;">Take a tour</button>
+			</div>
+			
+			<div class="bubbles">
+				<img src="bubble.png">
+				<img src="bubble.png">
+				<img src="bubble.png">
+				<img src="bubble.png">
+				<img src="bubble.png">
+				<img src="bubble.png">
+				<img src="bubble.png">
+			</div>
+		</div>
+
+		
+	</body>
+</html>

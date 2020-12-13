@@ -1,0 +1,173 @@
+<html>
+	<style>
+
+	*{
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	  outline: none;
+	  font-family: 'Roboto', sans-serif;
+	}
+
+	body{
+	  background: url('background.png') no-repeat top center;
+	  background-size: cover;
+	  height: 100vh;
+	}
+
+	.wrapper{
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  width: 100%;
+	  max-width: 800px;
+	  background: rgba(0,0,0,0.8);
+	  padding: 30px;
+	  border-radius: 5px;
+	  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	}
+
+	.wrapper .title h1{
+	  color: #c5ecfd;
+	  text-align: center;
+	  margin-bottom: 25px;
+	}
+
+	.contact-form{
+	  display: flex;
+	}
+
+	.input-fields{
+	  display: flex;
+	  flex-direction: column;
+	  margin-right: 4%;
+	}
+
+	.input-fields,
+	.msg{
+	  width: 48%;
+	}
+
+	.input-fields .input,
+	.msg textarea{
+	  margin: 10px 0;
+	  background: transparent;
+	  border: 0px;
+	  border-bottom: 2px solid #c5ecfd;
+	  padding: 10px;
+	  color: #c5ecfd;
+	  width: 100%;
+	}
+
+	.msg textarea{
+	  height: 212px;
+	}
+
+	::-webkit-input-placeholder {
+	  /* Chrome/Opera/Safari */
+	  color: #c5ecfd;
+	}
+	::-moz-placeholder {
+	  /* Firefox 19+ */
+	  color: #c5ecfd;
+	}
+	:-ms-input-placeholder {
+	  /* IE 10+ */
+	  color: #c5ecfd;
+	}
+
+	.btn {
+		background: #39b7dd;
+		text-align: center;
+		margin-left: 100px;
+		width: 200px;
+		padding: 15px;
+		border-radius: 5px;
+		color: #fff;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+
+	@media screen and (max-width: 600px){
+	  .contact-form{
+		flex-direction: column;
+	  }
+	  .msg textarea{
+		height: 80px;
+	  }
+	  .input-fields,
+	  .msg{
+		width: 100%;
+	  }
+	}
+		.tff{
+		color: #c5ecfd;
+		font-size: 13px;
+		cellpadding: 10px;
+		border-spacing: 8px;
+	}
+	</style>
+	<body>
+		<div class="wrapper">
+		  <div class="title">
+			<h1>Feedback Form</h1>
+		  </div>
+		  <div class="contact-form">
+			<div class="input-fields">
+			  <input type="text" class="input" placeholder="Name">
+			  <input type="text" class="input" placeholder="Email Address">
+			  <input type="text" class="input" placeholder="Phone">
+				<table class="tff">
+				<tr>
+					<td><label for="Gender">Gender:</label></td>
+					<td><input type="radio" name="sex" value="male"/>Male </td>
+					<td><input type="radio" name="sex" value="female"/>female</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="course">Course : </label>
+						<select name="course">
+						<option value="cs110">CS110</option>
+						<option value="cs111">CS111</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="course">Semester : </label>
+						<select name="course">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="2">3</option>
+						<option value="2">4</option>
+						<option value="2">5</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="sport">Language expertise: </label></td>
+					<td><input type="checkbox" name="lang" value="php"/>PHP</td>
+					<td><input type="checkbox" name="lang" value="java"/>Java</td>
+					<td><input type="checkbox" name="lang" value="html"/>HTML</td>
+					<td><input type="checkbox" name="lang" value="css"/>CSS</td>
+
+					
+				</tr>
+				</table>
+			</div>
+			<div class="msg">
+			  <textarea placeholder="Message"></textarea>
+			  <button class="btn" onClick="alertFunction()">Submit</button>
+			</div>
+		  </div>
+		</div>
+		<script>
+			function alertFunction() {
+				alert("Thank you for your honest feedback!");
+				window.location="End.html";
+				
+			}
+		</script>
+	</body>
+</html>
