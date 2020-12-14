@@ -115,28 +115,29 @@
 		  </div>
 		  <div class="contact-form">
 			<div class="input-fields">
-			  <input type="text" class="input" placeholder="Name">
-			  <input type="text" class="input" placeholder="Email Address">
-			  <input type="text" class="input" placeholder="Phone">
+				<form name="form">
+			  <input type="text" class="input" name="name" placeholder="Name">
+			  <input type="text" class="input" name="email" placeholder="Email Address">
+			  <input type="text" class="input" name="phone" placeholder="Phone">
 				<table class="tff">
 				<tr>
 					<td><label for="Gender">Gender:</label></td>
-					<td><input type="radio" name="sex" value="male"/>Male </td>
-					<td><input type="radio" name="sex" value="female"/>female</td>
+					<td><input type="radio" name="sex" value="Male"/>Male </td>
+					<td><input type="radio" name="sex" value="Female"/>Female</td>
 				</tr>
 				<tr>
 					<td>
 						<label for="course">Course : </label>
 						<select name="course">
-						<option value="cs110">CS110</option>
-						<option value="cs111">CS111</option>
+						<option value="CS110">CS110</option>
+						<option value="CS111">CS111</option>
 						</select>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<label for="course">Semester : </label>
-						<select name="course">
+						<label for="semester">Semester : </label>
+						<select name="sem">
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="2">3</option>
@@ -146,25 +147,47 @@
 					</td>
 				</tr>
 				<tr>
-					<td><label for="sport">Language expertise: </label></td>
-					<td><input type="checkbox" name="lang" value="php"/>PHP</td>
-					<td><input type="checkbox" name="lang" value="java"/>Java</td>
-					<td><input type="checkbox" name="lang" value="html"/>HTML</td>
-					<td><input type="checkbox" name="lang" value="css"/>CSS</td>
+					<td><label for="sport">Language Expertise: </label></td>
+					<td><input type="checkbox" name="lang" value="PHP" >PHP</td>
+					<td><input type="checkbox" name="lang" value="Java" >Java</td>
+					<td><input type="checkbox" name="lang" value="HTML" >HTML</td>
+					<td><input type="checkbox" name="lang" value="CSS" >CSS</td>
 
 					
 				</tr>
 				</table>
+				</form>
 			</div>
 			<div class="msg">
-			  <textarea placeholder="Message"></textarea>
+			  <form name="form2"><textarea name="msg" placeholder="Message"></textarea></form>
 			  <button class="btn" onClick="alertFunction()">Submit</button>
 			</div>
 		  </div>
 		</div>
 		<script>
+
 			function alertFunction() {
-				alert("Thank you for your honest feedback!");
+				var checkboxesChecked = "";
+			
+				var checkB = document.getElementsByName('lang');
+				for(var i=0; i<checkB.length; i++){
+                	if(checkB[i].checked == true)
+					checkboxesChecked += checkB[i].value + " ";
+                 }
+				str = "Thank you for your honest feedback " + document.form.name.value + "!";
+				str += "\nFeedback Details: ";
+				str += "\n-------------------"
+				str += "\nName : " + document.form.name.value;
+				str += "\nEmail : " + document.form.email.value;
+				str += "\nPhone no. : " + document.form.phone.value;
+				str += "\nGender : " + document.form.sex.value;
+				str += "\nCourse : " + document.form.course.value;
+				str += "\nSemester : " + document.form.sem.value;
+				str += "\nLanguage Expertise : " + checkboxesChecked;
+				str += "\nMessage leaved : " + document.form2.msg.value;
+				
+				
+				alert(str);
 				window.location="End.html";
 				
 			}
